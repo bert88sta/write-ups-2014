@@ -14,6 +14,7 @@
 * [supercow-40](forensics/supercow-40)
 * [easy-overflow-40](binary-exploitation/easy-overflow-40)
 * [write-right-50](binary-exploitation/write-right-50)
+* [execute-me-80](binary-exploitation/execute-me-80)
 
 ## External write-ups only
 
@@ -27,7 +28,6 @@
 * [cyborg-secrets-80](reverse-engineering/cyborg-secrets-80)
 * [delicious-60](web-exploitation/delicious-60)
 * [ecc-100](crypto/ecc-100)
-* [execute-me-80](binary-exploitation/execute-me-80)
 * [fancy-cache-200](master-challenge/fancy-cache-200)
 * [format-70](binary-exploitation/format-70)
 * [function-address-60](reverse-engineering/function-address-60)
