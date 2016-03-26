@@ -18,6 +18,7 @@
 * [guess-75](binary-exploitation/guess-75)
 * [overflow-1-50](binary-exploitation/overflow-1-50)
 * [overflow-2-70](binary-exploitation/overflow-2-70)
+* [rop-1-100](binary-exploitation/rop-1-100)
 
 
 
@@ -60,7 +61,6 @@
 * [repeated-xor-70](crypto/repeated-xor-70)
 * [revenge-of-bleichenbacher-170](crypto/revenge-of-bleichenbacher-170)
 * [robo-photo-30](miscellaneous/robo-photo-30)
-* [rop-1-100](binary-exploitation/rop-1-100)
 * [rsa-80](crypto/rsa-80)
 * [rsa-mistakes-200](master-challenge/rsa-mistakes-200)
 * [secure-page-service-100](web-exploitation/secure-page-service-100)
