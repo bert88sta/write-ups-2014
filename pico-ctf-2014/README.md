@@ -17,6 +17,7 @@
 * [execute-me-80](binary-exploitation/execute-me-80)
 * [guess-75](binary-exploitation/guess-75)
 * [overflow-1-50](binary-exploitation/overflow-1-50)
+* [overflow-2-70](binary-exploitation/overflow-2-70)
 
 
 
@@ -51,7 +52,6 @@
 * [no-overflow-140](binary-exploitation/no-overflow-140)
 * [obfusication-150](reverse-engineering/obfusication-150)
 * [obo-90](miscellaneous/obo-90)
-* [overflow-2-70](binary-exploitation/overflow-2-70)
 * [pickle-jar-30](forensics/pickle-jar-30)
 * [png-or-not-100](forensics/png-or-not-100)
 * [police-records-140](reverse-engineering/police-records-140)
