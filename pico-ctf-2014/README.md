@@ -15,6 +15,8 @@
 * [easy-overflow-40](binary-exploitation/easy-overflow-40)
 * [write-right-50](binary-exploitation/write-right-50)
 * [execute-me-80](binary-exploitation/execute-me-80)
+* [guess-75](binary-exploitation/guess-75)
+
 
 ## External write-ups only
 
@@ -32,7 +34,6 @@
 * [format-70](binary-exploitation/format-70)
 * [function-address-60](reverse-engineering/function-address-60)
 * [grep-is-still-your-friend-40](forensics/grep-is-still-your-friend-40)
-* [guess-75](binary-exploitation/guess-75)
 * [hardcore-rop-200](master-challenge/hardcore-rop-200)
 * [injection-1-90](web-exploitation/injection-1-90)
 * [injection-2-110](web-exploitation/injection-2-110)
