@@ -12,6 +12,7 @@
 * [tyrannosaurus-hex-10](miscellaneous/tyrannosaurus-hex-10)
 * [this-is-endian-40](binary-exploitation/this-is-endian-40)
 * [supercow-40](forensics/supercow-40)
+* [easy-overflow-40](binary-exploitation/easy-overflow-40)
 
 ## External write-ups only
 
@@ -24,7 +25,6 @@
 * [crude-crypt-180](binary-exploitation/crude-crypt-180)
 * [cyborg-secrets-80](reverse-engineering/cyborg-secrets-80)
 * [delicious-60](web-exploitation/delicious-60)
-* [easy-overflow-40](binary-exploitation/easy-overflow-40)
 * [ecc-100](crypto/ecc-100)
 * [execute-me-80](binary-exploitation/execute-me-80)
 * [fancy-cache-200](master-challenge/fancy-cache-200)
