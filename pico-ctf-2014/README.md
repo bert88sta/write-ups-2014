@@ -13,6 +13,7 @@
 * [this-is-endian-40](binary-exploitation/this-is-endian-40)
 * [supercow-40](forensics/supercow-40)
 * [easy-overflow-40](binary-exploitation/easy-overflow-40)
+* [write-right-50](binary-exploitation/write-right-50)
 
 ## External write-ups only
 
@@ -69,7 +70,6 @@
 * [tic-toc-90](reverse-engineering/tic-toc-90)
 * [toaster-control-50](web-exploitation/toaster-control-50)
 * [towers-of-toast-90](reverse-engineering/towers-of-toast-90)
-* [write-right-50](binary-exploitation/write-right-50)
 * [what-the-flag-140](binary-exploitation/what-the-flag-140)
 * [web-interseption-140](crypto/web-interseption-140)
 * [xor-50](crypto/xor-50)
