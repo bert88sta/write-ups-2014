@@ -110,7 +110,6 @@ syscalls.
 Either way, here is what we need:
 
 
-opy to clipboard
 |   syscall  |  eax |       ebx       |        ecx       |       edx       |
 |:----------:|:----:|:---------------:|:----------------:|:---------------:|
 | read()     | 0x03 | unsigned int fd | char __user *buf |   size_t count  |
