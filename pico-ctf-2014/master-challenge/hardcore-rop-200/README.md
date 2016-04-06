@@ -109,11 +109,13 @@ syscalls.
 
 Either way, here is what we need:
 
-| Syscall     | `%eax` | `%ebx` | `%ecx` | `%edx` |
-|-------------|:------:|:------:|:------:|:------:|
-|`mprotect()` |        |        |        |        |
-|`read()`     |        |        |        |        |
 
+opy to clipboard
+|   syscall  |  eax |       ebx       |        ecx       |       edx       |
+|:----------:|:----:|:---------------:|:----------------:|:---------------:|
+| read()     | 0x03 | unsigned int fd | char __user *buf |   size_t count  |
+| mprotect() | 0x7d |  unsigned long  |  startsize_t len | startsize_t len |
+|            |      |                 |                  |                 |
 
 ## Other write-ups and resources
 
