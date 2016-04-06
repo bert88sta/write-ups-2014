@@ -71,6 +71,49 @@ thing about this is that with the same seed, the gadgets can relibably be
 reporoduced. Furthermore, 0x0F000000 is the only reliable address we have in
 this code.
 
+If you're not familiar with a `syscall` then I'd suggest reaing up on them. In
+order to get a `syscall`, we need a special instruction, namely `int 0x80;ret`.
+This instruction gives us access to a few special functions. In order to find
+the `int 0x80;ret` instruction, we'll need to make a script that tries
+different seed values unti the instruction shows up. [My script](mem.py) is designed to
+work with gdb-peda, but you could easily rework it for regular gdb :)
+
+After running the script, I got a seed of "000L". Now let's find the offset for
+hijacking `%eip`.
+
+```
+$ (python -c 'print "000L" + "a"*32 + "BBBB"' ) | strace ./hardcore_rop .
+...
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x42424242} ---
+```
+
+The extra "." at the end is just to make sure the `chdir` conditional is
+satisfied. You'll need that as an argument and also a file named "flag" in the same directory.
+Now that we've gotten control, It's time to do the fun work with syscalls! :D
+
+In order to get a shell to run, we need to get shellcode at 0x0f000000 
+ (The only reliable address we have), change the privileges on it with `mprotect()`,
+and jump there to execute it. In order to make this happen, we need to use our
+special instruction to call `mprotect()` and `read()`. I'll say it again, go
+read up on syscalls. If you still don't want to, here's the cliffnotes:
+
+The `int 0x80` instruction is used to call all of the sycalls. When that
+instruction runs, the number in `%eax` determines which syscall we get.
+`mprotect()` needs eax to be 0x7d, and  `read()` needs to be 0x03. From there,
+the arguments vary per syscall, but you should know that `%ebx`,`%ecx`, and
+`%edx` contain the arguments (also `%esi` and `%edi` if it needs more than 3
+arguments).
+
+I like to use [KernelGrok's reference](http://syscalls.kernelgrok.com/) on
+syscalls.
+
+Either way, here is what we need:
+
+| Syscall     | `%eax` | `%ebx` | `%ecx` | `%edx` |
+|-------------|:------:|:------:|:------:|:------:|
+|`mprotect()` |        |        |        |        |
+|`read()`     |        |        |        |        |
+
 
 ## Other write-ups and resources
 
